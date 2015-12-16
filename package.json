@@ -1,0 +1,28 @@
+{
+  "name": "trayapp",
+  "version": "1.0.0",
+  "description": "Electron tray application with arrow",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilhyun/electron-trayapp.git"
+  },
+  "keywords": [
+    "Electron",
+    "trayapp",
+    "tray",
+    "window arrow"
+  ],
+  "author": "Gil Hyun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gilhyun/electron-trayapp/issues"
+  },
+  "homepage": "https://github.com/gilhyun/electron-trayapp#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^0.36.0"
+  }
+}
