@@ -14,6 +14,20 @@ let arrowWindow = null;
 let trayapp = new events.EventEmitter();
 trayapp.app = app;
 
+app.on('window-all-closed', function() {
+  if (process.platform != 'darwin') {
+    app.quit();
+  }
+});
+
+app.on('ready', function() {
+  // trayapp.emit('ready');
+
+  trayapp.setArrowWindow();
+  trayapp.setTrayWindow();
+  trayapp.setTray();
+});
+
 // Arrow window.
 trayapp.setArrowWindow = function() {
   // trayapp.emit('createArrowWindow');
@@ -102,17 +116,3 @@ trayapp.toggleTrayWindow = function(bounds) {
   arrowWindow.show();
   trayWindow.show();
 };
-
-app.on('window-all-closed', function() {
-  if (process.platform != 'darwin') {
-    app.quit();
-  }
-});
-
-app.on('ready', function() {
-  // trayapp.emit('ready');
-
-  trayapp.setArrowWindow();
-  trayapp.setTrayWindow();
-  trayapp.setTray();
-});
