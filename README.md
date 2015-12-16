@@ -1,7 +1,7 @@
 # electron-trayapp(Arrow trick)
 
 This is a Arrow trick for Electron tray application.
-**tested oney mac os**
+**tested on only mac os**
 
 **Mac OS**
 
