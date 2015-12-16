@@ -1,5 +1,5 @@
 {
-  "name": "trayapp",
+  "name": "electron-trayapp",
   "version": "1.0.0",
   "description": "Electron tray application with arrow",
   "main": "main.js",
